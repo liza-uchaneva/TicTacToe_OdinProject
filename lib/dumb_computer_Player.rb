@@ -1,6 +1,7 @@
 class Dumb < Computer
     getNextTurn(board)
     {
-        return board.getAvailableMoves().sample
+        rndVal  = board.getAvailableMoves().sample(1)[0]
+        return rndVal
     }
 end
